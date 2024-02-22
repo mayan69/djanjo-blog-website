@@ -26,3 +26,4 @@ urlpatterns = [
 ]
 if settings.DEBUG:
     urlpatterns +=static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)   #ir wants dnajgo to handle the static links in static content only in development mode
+    urlpatterns +=static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)  
